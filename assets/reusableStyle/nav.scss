@@ -1,0 +1,447 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Quicksand:wght@700&family=Roboto&display=swap');
+
+.lockedScroll {
+    height: 100vh; //view height
+    overflow: hidden;
+}
+
+.lockedLoggingScroll {
+    overflow: hidden;
+}
+
+// mobile navigation
+.navigation {
+    color: #1d2e36;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    margin: 10px 5% 0 5%;
+
+    // logo
+    .logo {
+        text-decoration: none;
+        font-family: 'Quicksand';
+        font-size: 30px;
+        color: #1d2e36;
+    }
+
+    // menu img
+    .burgerMenu {
+        z-index: 10;
+        width: 25px;
+        height: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        span {
+            width: 100%;
+            height: 4px;
+            background-color: #1d2e36;
+            border-radius: 5px;
+        }
+
+        .burgerClickEffect {
+            background-color: #5ae3a7;
+        }
+    }
+
+    .burgerNone {
+        display: none;
+    }
+
+    // menu content
+    .navBar {
+        display: none;
+
+        #navListContainer {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .navlist {
+                list-style: none;
+                padding: 10px;
+
+                .navlistItem {
+                    font-size: 20px;
+                }
+
+                a {
+                    color: #5ae3a7;
+                    font-size: 25px;
+                    text-decoration: none;
+                }
+
+
+                .dropDownContainer {
+                    .profile {
+                        margin: 0;
+
+
+                        .profileImgWrapper {
+                            a {
+                                display: flex;
+                                height: 60px;
+                                width: auto;
+
+                                img {
+                                    display: flex;
+                                    height: 60px;
+                                    width: auto;
+
+                                }
+                            }
+                        }
+
+                        .profileImgWrapperPc {
+                            a {
+                                display: none;
+
+                                img {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+
+                    // login
+                    .loginPopUp {
+                        display: none;
+                        background: #1d2e36;
+                        border-radius: 15px;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        padding: 30px;
+                        flex-direction: column;
+
+                        .loginCloseBtn {
+                            display: flex;
+                            justify-content: flex-end;
+                            font-size: 40px;
+                            padding-right: 12px;
+                            color: #fff;
+                        }
+
+                        .loginForm {
+                            margin: 10px 20px 20px 20px;
+
+                            .title {
+                                padding-bottom: 10px;
+                                text-align: center;
+                                font-size: 30px;
+                                color: #fff;
+                            }
+
+                            .formElement {
+                                font-size: 20px;
+                                display: flex;
+                                flex-direction: column;
+                                padding: 20px 0 5px 0;
+
+                                label {
+                                    color: #fff;
+                                }
+
+                                input {
+                                    height: 30px;
+                                    border-radius: 5px;
+                                    border: none;
+                                    background-color: #fff;
+                                }
+
+                                input[type="text"]::placeholder,
+                                input[type="password"]::placeholder {
+                                    color: #1d2e36;
+                                    padding-left: 10px;
+                                }
+
+                                .signInBtn {
+                                    font-size: 20px;
+                                    white-space: nowrap;
+                                    height: 40px;
+                                    width: 90px;
+                                    border-radius: 5px;
+                                    border: none;
+                                    margin: auto;
+                                    color: #1d2e36;
+                                    background-color: #5ae3a7 ;
+                                }
+                            }
+
+                            .checkbx {
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: space-between;
+                                padding: 20px 10px 0 10px;
+                                align-items: center;
+
+                                label {
+                                    font-size: 15px;
+                                }
+
+                                input[type="checkbox"] {
+                                    transform: scale(1.5);
+                                }
+                            }
+
+                            .otherOptions {
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+
+                                .otherOptionsFormElement {
+                                    padding: 3px;
+
+                                    a {
+                                        color: #fff;
+                                        font-size: 15px;
+                                    }
+                                }
+
+                                .registerFormElement {
+                                    padding-top: 10px;
+                                }
+                            }
+                        }
+                    }
+                    .loginPopUpView {
+                        display: flex;
+                    }
+
+                    // register
+                    .registerPopUp {
+                        display: none;
+                        background-color: #1d2e36;
+                        border-radius: 15px;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        padding: 30px;
+                        flex-direction: column;
+
+                        .registerCloseBtn {
+                            display: flex;
+                            justify-content: flex-end;
+                            font-size: 40px;
+                            padding-right: 12px;
+                            color: #fff;
+                        }
+
+                        .registerForm {
+                            margin: 10px 20px 20px 20px;
+
+                            .title {
+                                padding-bottom: 10px;
+                                text-align: center;
+                                font-size: 30px;
+                                color: #fff;
+                            }
+
+                            .formElement {
+                                font-size: 20px;
+                                display: flex;
+                                flex-direction: column;
+                                padding: 20px 0 5px 0;
+
+                                label {
+                                    color: #fff;
+                                }
+
+                                input {
+                                    height: 30px;
+                                    border-radius: 5px;
+                                    border: none;
+                                }
+
+                                input[type="text"]::placeholder,
+                                input[type="password"]::placeholder {
+                                    color: #1d2e36;
+                                    padding-left: 10px;
+                                }
+
+                                .registerBtn {
+                                    font-size: 20px;
+                                    white-space: nowrap;
+                                    height: 40px;
+                                    width: 90px;
+                                    border-radius: 5px;
+                                    border: none;
+                                    margin: auto;
+                                    color: #1d2e36;
+                                    background-color: #5ae3a7 ;
+                                }
+                            }
+
+                            .checkbx {
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: space-between;
+                                padding: 20px 10px 0 10px;
+                                align-items: center;
+
+                                label {
+                                    font-size: 15px;
+                                }
+
+                                input[type="checkbox"] {
+                                    transform: scale(1.5);
+                                }
+                            }
+
+                            .otherOptions {
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+
+                                .otherOptionsFormElement {
+                                    padding: 3px;
+
+                                    a {
+                                        color: #fff;
+                                        font-size: 15px;
+                                    }
+                                }
+
+                                .signInFormElement {
+                                    padding-top: 10px;
+                                }
+                            }
+                        }
+                    }
+                    .registerPopUpView {
+                        display: flex;
+                    }
+                }
+
+            }
+        }
+    }
+
+    // navHandler.js navEffect
+    .navEffect {
+        display: flex;
+        position: fixed;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #1d2e36ec;
+    }
+}
+
+// tablet navigation
+@media screen and (min-width: 768px) {
+    .navigation {
+
+        // logo
+        .logo {
+            font-size: 40px;
+        }
+
+        .burgerMenu {
+            width: 30px;
+            height: 25px;
+        }
+    }
+}
+
+// pc navigation
+@media screen and (min-width: 1024px) {
+
+    .navigation {
+        padding: 10px;
+
+        // logo
+        .logo {
+            font-size: 50px;
+            margin-left: 20px;
+        }
+
+        // menu img
+        .burgerMenu {
+            display: none;
+        }
+
+        // menu content
+        .navBar {
+            display: flex;
+            margin-right: 20px;
+
+            #navListContainer {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                gap: 20px;
+
+                .navlist {
+                    margin-top: 10px;
+
+                    .navlistItem {
+                        font-size: 15px;
+                    }
+
+                    a {
+                        color: #1d2e36;
+                        font-size: 20px;
+                    }
+
+                    .dropDownContainer {
+                        .profile {
+                            margin: 0;
+
+
+                            .profileImgWrapper {
+                                a {
+                                    display: none;
+
+                                    img {
+                                        display: none;
+                                    }
+                                }
+                            }
+
+                            .profileImgWrapperPc {
+                                a {
+                                    display: flex;
+                                    height: 40px;
+                                    width: auto;
+
+                                    img {
+                                        display: flex;
+                                        height: 40px;
+                                        width: auto;
+
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
+    // menu content for profile.html page
+    .navigationProfile {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    // wrapper for all html pages
+    .wrapper {
+        max-width: 1440px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

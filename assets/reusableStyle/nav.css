@@ -1,0 +1,351 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Quicksand:wght@700&family=Roboto&display=swap");
+.lockedScroll {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.lockedLoggingScroll {
+  overflow: hidden;
+}
+
+.navigation {
+  color: #1d2e36;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  margin: 10px 5% 0 5%;
+}
+.navigation .logo {
+  text-decoration: none;
+  font-family: "Quicksand";
+  font-size: 30px;
+  color: #1d2e36;
+}
+.navigation .burgerMenu {
+  z-index: 10;
+  width: 25px;
+  height: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.navigation .burgerMenu span {
+  width: 100%;
+  height: 4px;
+  background-color: #1d2e36;
+  border-radius: 5px;
+}
+.navigation .burgerMenu .burgerClickEffect {
+  background-color: #5ae3a7;
+}
+.navigation .burgerNone {
+  display: none;
+}
+.navigation .navBar {
+  display: none;
+}
+.navigation .navBar #navListContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.navigation .navBar #navListContainer .navlist {
+  list-style: none;
+  padding: 10px;
+}
+.navigation .navBar #navListContainer .navlist .navlistItem {
+  font-size: 20px;
+}
+.navigation .navBar #navListContainer .navlist a {
+  color: #5ae3a7;
+  font-size: 25px;
+  text-decoration: none;
+}
+.navigation .navBar #navListContainer .navlist .dropDownContainer .profile {
+  margin: 0;
+}
+.navigation .navBar #navListContainer .navlist .dropDownContainer .profile .profileImgWrapper a {
+  display: flex;
+  height: 60px;
+  width: auto;
+}
+.navigation .navBar #navListContainer .navlist .dropDownContainer .profile .profileImgWrapper a img {
+  display: flex;
+  height: 60px;
+  width: auto;
+}
+.navigation .navBar #navListContainer .navlist .dropDownContainer .profile .profileImgWrapperPc a {
+  display: none;
+}
+.navigation .navBar #navListContainer .navlist .dropDownContainer .profile .profileImgWrapperPc a img {
+  display: none;
+}
+.navigation .navBar #navListContainer .navlist .dropDownContainer .loginPopUp {
+  display: none;
+  background: #1d2e36;
+  border-radius: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 30px;
+  flex-direction: column;
+}
+.navigation .navBar #navListContainer .navlist .dropDownContainer .loginPopUp .loginCloseBtn {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 40px;
+  padding-right: 12px;
+  color: #fff;
+}
+.navigation .navBar #navListContainer .navlist .dropDownContainer .loginPopUp .loginForm {
+  margin: 10px 20px 20px 20px;
+}
+.navigation .navBar #navListContainer .navlist .dropDownContainer .loginPopUp .loginForm .title {
+  padding-bottom: 10px;
+  text-align: center;
+  font-size: 30px;
+  color: #fff;
+}
+.navigation .navBar #navListContainer .navlist .dropDownContainer .loginPopUp .loginForm .formElement {
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0 5px 0;
+}
+.navigation .navBar #navListContainer .navlist .dropDownContainer .loginPopUp .loginForm .formElement label {
+  color: #fff;
+}
+.navigation .navBar #navListContainer .navlist .dropDownContainer .loginPopUp .loginForm .formElement input {
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  background-color: #fff;
+}
+.navigation .navBar #navListContainer .navlist .dropDownContainer .loginPopUp .loginForm .formElement input[type=text]::-moz-placeholder, .navigation .navBar #navListContainer .navlist .dropDownContainer .loginPopUp .loginForm .formElement input[type=password]::-moz-placeholder {
+  color: #1d2e36;
+  padding-left: 10px;
+}
+.navigation .navBar #navListContainer .navlist .dropDownContainer .loginPopUp .loginForm .formElement input[type=text]::placeholder,
+.navigation .navBar #navListContainer .navlist .dropDownContainer .loginPopUp .loginForm .formElement input[type=password]::placeholder {
+  color: #1d2e36;
+  padding-left: 10px;
+}
+.navigation .navBar #navListContainer .navlist .dropDownContainer .loginPopUp .loginForm .formElement .signInBtn {
+  font-size: 20px;
+  white-space: nowrap;
+  height: 40px;
+  width: 90px;
+  border-radius: 5px;
+  border: none;
+  margin: auto;
+  color: #1d2e36;
+  background-color: #5ae3a7;
+}
+.navigation .navBar #navListContainer .navlist .dropDownContainer .loginPopUp .loginForm .checkbx {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px 10px 0 10px;
+  align-items: center;
+}
+.navigation .navBar #navListContainer .navlist .dropDownContainer .loginPopUp .loginForm .checkbx label {
+  font-size: 15px;
+}
+.navigation .navBar #navListContainer .navlist .dropDownContainer .loginPopUp .loginForm .checkbx input[type=checkbox] {
+  transform: scale(1.5);
+}
+.navigation .navBar #navListContainer .navlist .dropDownContainer .loginPopUp .loginForm .otherOptions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.navigation .navBar #navListContainer .navlist .dropDownContainer .loginPopUp .loginForm .otherOptions .otherOptionsFormElement {
+  padding: 3px;
+}
+.navigation .navBar #navListContainer .navlist .dropDownContainer .loginPopUp .loginForm .otherOptions .otherOptionsFormElement a {
+  color: #fff;
+  font-size: 15px;
+}
+.navigation .navBar #navListContainer .navlist .dropDownContainer .loginPopUp .loginForm .otherOptions .registerFormElement {
+  padding-top: 10px;
+}
+.navigation .navBar #navListContainer .navlist .dropDownContainer .loginPopUpView {
+  display: flex;
+}
+.navigation .navBar #navListContainer .navlist .dropDownContainer .registerPopUp {
+  display: none;
+  background-color: #1d2e36;
+  border-radius: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 30px;
+  flex-direction: column;
+}
+.navigation .navBar #navListContainer .navlist .dropDownContainer .registerPopUp .registerCloseBtn {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 40px;
+  padding-right: 12px;
+  color: #fff;
+}
+.navigation .navBar #navListContainer .navlist .dropDownContainer .registerPopUp .registerForm {
+  margin: 10px 20px 20px 20px;
+}
+.navigation .navBar #navListContainer .navlist .dropDownContainer .registerPopUp .registerForm .title {
+  padding-bottom: 10px;
+  text-align: center;
+  font-size: 30px;
+  color: #fff;
+}
+.navigation .navBar #navListContainer .navlist .dropDownContainer .registerPopUp .registerForm .formElement {
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0 5px 0;
+}
+.navigation .navBar #navListContainer .navlist .dropDownContainer .registerPopUp .registerForm .formElement label {
+  color: #fff;
+}
+.navigation .navBar #navListContainer .navlist .dropDownContainer .registerPopUp .registerForm .formElement input {
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+}
+.navigation .navBar #navListContainer .navlist .dropDownContainer .registerPopUp .registerForm .formElement input[type=text]::-moz-placeholder, .navigation .navBar #navListContainer .navlist .dropDownContainer .registerPopUp .registerForm .formElement input[type=password]::-moz-placeholder {
+  color: #1d2e36;
+  padding-left: 10px;
+}
+.navigation .navBar #navListContainer .navlist .dropDownContainer .registerPopUp .registerForm .formElement input[type=text]::placeholder,
+.navigation .navBar #navListContainer .navlist .dropDownContainer .registerPopUp .registerForm .formElement input[type=password]::placeholder {
+  color: #1d2e36;
+  padding-left: 10px;
+}
+.navigation .navBar #navListContainer .navlist .dropDownContainer .registerPopUp .registerForm .formElement .registerBtn {
+  font-size: 20px;
+  white-space: nowrap;
+  height: 40px;
+  width: 90px;
+  border-radius: 5px;
+  border: none;
+  margin: auto;
+  color: #1d2e36;
+  background-color: #5ae3a7;
+}
+.navigation .navBar #navListContainer .navlist .dropDownContainer .registerPopUp .registerForm .checkbx {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px 10px 0 10px;
+  align-items: center;
+}
+.navigation .navBar #navListContainer .navlist .dropDownContainer .registerPopUp .registerForm .checkbx label {
+  font-size: 15px;
+}
+.navigation .navBar #navListContainer .navlist .dropDownContainer .registerPopUp .registerForm .checkbx input[type=checkbox] {
+  transform: scale(1.5);
+}
+.navigation .navBar #navListContainer .navlist .dropDownContainer .registerPopUp .registerForm .otherOptions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.navigation .navBar #navListContainer .navlist .dropDownContainer .registerPopUp .registerForm .otherOptions .otherOptionsFormElement {
+  padding: 3px;
+}
+.navigation .navBar #navListContainer .navlist .dropDownContainer .registerPopUp .registerForm .otherOptions .otherOptionsFormElement a {
+  color: #fff;
+  font-size: 15px;
+}
+.navigation .navBar #navListContainer .navlist .dropDownContainer .registerPopUp .registerForm .otherOptions .signInFormElement {
+  padding-top: 10px;
+}
+.navigation .navBar #navListContainer .navlist .dropDownContainer .registerPopUpView {
+  display: flex;
+}
+.navigation .navEffect {
+  display: flex;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(29, 46, 54, 0.9254901961);
+}
+
+@media screen and (min-width: 768px) {
+  .navigation .logo {
+    font-size: 40px;
+  }
+  .navigation .burgerMenu {
+    width: 30px;
+    height: 25px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .navigation {
+    padding: 10px;
+  }
+  .navigation .logo {
+    font-size: 50px;
+    margin-left: 20px;
+  }
+  .navigation .burgerMenu {
+    display: none;
+  }
+  .navigation .navBar {
+    display: flex;
+    margin-right: 20px;
+  }
+  .navigation .navBar #navListContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+  }
+  .navigation .navBar #navListContainer .navlist {
+    margin-top: 10px;
+  }
+  .navigation .navBar #navListContainer .navlist .navlistItem {
+    font-size: 15px;
+  }
+  .navigation .navBar #navListContainer .navlist a {
+    color: #1d2e36;
+    font-size: 20px;
+  }
+  .navigation .navBar #navListContainer .navlist .dropDownContainer .profile {
+    margin: 0;
+  }
+  .navigation .navBar #navListContainer .navlist .dropDownContainer .profile .profileImgWrapper a {
+    display: none;
+  }
+  .navigation .navBar #navListContainer .navlist .dropDownContainer .profile .profileImgWrapper a img {
+    display: none;
+  }
+  .navigation .navBar #navListContainer .navlist .dropDownContainer .profile .profileImgWrapperPc a {
+    display: flex;
+    height: 40px;
+    width: auto;
+  }
+  .navigation .navBar #navListContainer .navlist .dropDownContainer .profile .profileImgWrapperPc a img {
+    display: flex;
+    height: 40px;
+    width: auto;
+  }
+  .navigationProfile {
+    display: flex;
+    flex-direction: column;
+  }
+  .wrapper {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}/*# sourceMappingURL=nav.css.map */

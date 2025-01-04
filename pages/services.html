@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CozyCare | Services</title>
+
+    <link rel="stylesheet" href="../componentStyle/services.css">
+    <link rel="stylesheet" href="../assets/reusableStyle/nav.css">
+    <link rel="stylesheet" href="../assets/reusableStyle/footer.css">
+
+    <script defer src="../assets/scripts/navHandler.js"></script>
+
+    <!-- testimonial cards -->
+    <script defer src="../assets/scripts/testimonialScroll.js"></script>
+    <script defer src="../assets/scripts/cardInjector.js" type="module"></script>
+
+
+    <!-- service cards -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css">
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js"></script>
+
+    <script defer src="../assets/scripts/serviceCards.js"></script>
+    <script defer src="../assets/scripts/serviceOptions.js"></script>
+
+</head>
+
+<body>
+    <!-- navigation -->
+    <section class="navigation wrapper">
+        <a href="../index.html" class="logo">CozyCare</a>
+        <div class="burgerMenu" id="burgerMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="navBar" id="navListWrapper">
+            <ul id="navListContainer">
+                <li class="navlist"><a href="../index.html">How it works</a></li>
+                <li class="navlist"><a href="../pages/services.html">Services</a></li>
+                <li class="navlist"><a href="../index.html">Prices</a></li>
+                <li class="navlist">
+                    <div class="dropDownContainer" id="logIn">
+                        <div class="profile">
+                            <div class="profileImgWrapper"> <a href="./profile.html"><img
+                                        src="../assets/images/profile.png" alt=""></a></div>
+                            <div class="profileImgWrapperPc"> <a href="./profile.html"><img
+                                        src="../assets/images/profilepc.png" alt=""></a></div>
+                        </div>
+                        <ul class="dropDown"></ul>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </section>
+    <section class="wavie">
+        <svg id="wave" style="transform:rotate(180deg); transition: 0.3s" viewBox="0 0 1440 180" version="1.1"
+            xmlns="http://www.w3.org/2000/svg">
+            <path style="transform:translate(0, 0px); opacity:1" fill="#fff"
+                d="M0,72L30,60C60,48,120,24,180,18C240,12,300,24,360,51C420,78,480,120,540,123C600,126,660,90,720,72C780,54,840,54,900,48C960,42,1020,30,1080,36C1140,42,1200,66,1260,69C1320,72,1380,54,1440,60C1500,66,1560,96,1620,117C1680,138,1740,150,1800,135C1860,120,1920,78,1980,69C2040,60,2100,84,2160,102C2220,120,2280,132,2340,141C2400,150,2460,156,2520,156C2580,156,2640,150,2700,147C2760,144,2820,144,2880,129C2940,114,3000,84,3060,84C3120,84,3180,114,3240,129C3300,144,3360,144,3420,120C3480,96,3540,48,3600,42C3660,36,3720,72,3780,84C3840,96,3900,84,3960,75C4020,66,4080,60,4140,48C4200,36,4260,18,4290,9L4320,0L4320,180L4290,180C4260,180,4200,180,4140,180C4080,180,4020,180,3960,180C3900,180,3840,180,3780,180C3720,180,3660,180,3600,180C3540,180,3480,180,3420,180C3360,180,3300,180,3240,180C3180,180,3120,180,3060,180C3000,180,2940,180,2880,180C2820,180,2760,180,2700,180C2640,180,2580,180,2520,180C2460,180,2400,180,2340,180C2280,180,2220,180,2160,180C2100,180,2040,180,1980,180C1920,180,1860,180,1800,180C1740,180,1680,180,1620,180C1560,180,1500,180,1440,180C1380,180,1320,180,1260,180C1200,180,1140,180,1080,180C1020,180,960,180,900,180C840,180,780,180,720,180C660,180,600,180,540,180C480,180,420,180,360,180C300,180,240,180,180,180C120,180,60,180,30,180L0,180Z">
+            </path>
+        </svg>
+    </section>
+
+    <!-- services section -->
+    <section class="servicesSection">
+        <div class="servicesTitleMain wrapper">Services</div>
+        <div class="servicesWrapper wrapper">
+            <div class="blog-slider">
+                <div class="blog-slider__wrp swiper-wrapper">
+
+                    <div class="blog-slider__item swiper-slide">
+                        <div class="blog-slider__img">
+                            <img src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1535759872/kuldar-kalvik-799168-unsplash.webp"
+                                alt="">
+                        </div>
+                        <div class="blog-slider__content">
+                            <div class="blog-slider__title">Wash & Fold</div>
+                            <div class="blog-slider__text">Our wash and fold service makes it easy to have your clothes
+                                brought up, cleaned, and folded.</div>
+                            <div class="blog-slider__button blogButton option1">READ MORE</div>
+                        </div>
+                    </div>
+
+                    <div class="blog-slider__item swiper-slide">
+                        <div class="blog-slider__img">
+                            <img src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1535759871/jason-leung-798979-unsplash.webp"
+                                alt="">
+                        </div>
+                        <div class="blog-slider__content">
+
+                            <div class="blog-slider__title">Dry Cleaning</div>
+                            <div class="blog-slider__text">Our dry cleaning service uses special solvents to sanitize
+                                and maintain the quality of your delicate and non-washable clothing.</div>
+                            <div class="blog-slider__button blogButton option2">READ MORE</div>
+                        </div>
+                    </div>
+
+                    <div class="blog-slider__item swiper-slide">
+                        <div class="blog-slider__img">
+                            <img src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1535759871/alessandro-capuzzi-799180-unsplash.webp"
+                                alt="">
+                        </div>
+                        <div class="blog-slider__content">
+
+                            <div class="blog-slider__title">Ironing</div>
+                            <div class="blog-slider__text">Want to maintain your clothes appearing crisp and
+                                wrinkle-free? Our ironing service is a handy way to remove wrinkles and creases.</div>
+                            <div class="blog-slider__button blogButton option3">READ MORE</div>
+                        </div>
+                    </div>
+
+                    <div class="blog-slider__item swiper-slide">
+                        <div class="blog-slider__img">
+                            <img src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1535759871/alessandro-capuzzi-799180-unsplash.webp"
+                                alt="">
+                        </div>
+                        <div class="blog-slider__content">
+
+                            <div class="blog-slider__title">Stain Removal</div>
+                            <div class="blog-slider__text">Our stain removal service provides a convenient solution for
+                                treating and eliminating difficult spots.</div>
+                            <div class="blog-slider__button blogButton option4">READ MORE</div>
+                        </div>
+                    </div>
+
+                    <div class="blog-slider__item swiper-slide">
+                        <div class="blog-slider__img">
+                            <img src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1535759871/alessandro-capuzzi-799180-unsplash.webp"
+                                alt="">
+                        </div>
+                        <div class="blog-slider__content">
+
+                            <div class="blog-slider__title">Alterations & Repairs</div>
+                            <div class="blog-slider__text">Our service offers an efficient solution for repairing
+                                ill-fitting clothes, trimming trousers, repairing rips, and more.</div>
+                            <div class="blog-slider__button blogButton option5">READ MORE</div>
+                        </div>
+                    </div>
+
+                    <div class="blog-slider__item swiper-slide">
+                        <div class="blog-slider__img">
+                            <img src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1535759871/alessandro-capuzzi-799180-unsplash.webp"
+                                alt="">
+                        </div>
+                        <div class="blog-slider__content">
+
+                            <div class="blog-slider__title">Bedding</div>
+                            <div class="blog-slider__text">Our bedding service provides a convenient way to wash and
+                                smoothen bed sheets, comforters, and other bedding items.</div>
+                            <div class="blog-slider__button blogButton option6">READ MORE</div>
+                        </div>
+                    </div>
+
+                    <div class="blog-slider__item swiper-slide">
+                        <div class="blog-slider__img">
+                            <img src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1535759871/alessandro-capuzzi-799180-unsplash.webp"
+                                alt="">
+                        </div>
+                        <div class="blog-slider__content">
+                            <div class="blog-slider__title">Shoes and Bags</div>
+                            <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                Recusandae
+                                voluptate repellendus magni illo ea animi?</div>
+                            <div class="blog-slider__button blogButton option7">READ MORE</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-slider__pagination"></div>
+            </div>
+        </div>
+    </section>
+    <!-- service modal windows -->
+    <section class="serviceInfoWindow">
+        <div class="navigation">
+            <ul class="options">
+                <li class="optionItem optionWash">Wash and Fold</li>
+                <li class="optionItem optionDryClean">Dry Cleaning</li>
+                <li class="optionItem optionIron">Ironing</li>
+                <li class="optionItem optionStainRemoval">Stain Removal</li>
+                <li class="optionItem optionRepairs">Alterations and Repairs</li>
+                <li class="optionItem optionBeds">Bedding Cleaning</li>
+                <li class="optionItem optionShoes">Shoe and Bag Cleaning</li>
+            </ul>
+        </div>
+        <div class="Wash option1">hello</div>
+        <div class="Iron option2">hello</div>
+        <div class="DryClean option3">hello</div>
+        <div class="StainRemoval option4">hello</div>
+        <div class="Repairs option5">hello</div>
+        <div class="Beds option6">hello</div>
+        <div class="Shoes option7">hello</div>
+    </section>
+    <section class="endWaveServices">
+        <svg id="wave" style="transform:rotate(180deg); transition: 0.3s" viewBox="0 0 1440 180" version="1.1"
+            xmlns="http://www.w3.org/2000/svg">
+            <path style="transform:translate(0, 0px); opacity:1" fill="#5ae3a7"
+                d="M0,36L30,39C60,42,120,48,180,66C240,84,300,114,360,117C420,120,480,96,540,72C600,48,660,24,720,21C780,18,840,36,900,51C960,66,1020,78,1080,72C1140,66,1200,42,1260,45C1320,48,1380,78,1440,78C1500,78,1560,48,1620,45C1680,42,1740,66,1800,87C1860,108,1920,126,1980,123C2040,120,2100,96,2160,90C2220,84,2280,96,2340,96C2400,96,2460,84,2520,78C2580,72,2640,72,2700,72C2760,72,2820,72,2880,84C2940,96,3000,120,3060,123C3120,126,3180,108,3240,84C3300,60,3360,30,3420,15C3480,0,3540,0,3600,24C3660,48,3720,96,3780,120C3840,144,3900,144,3960,135C4020,126,4080,108,4140,111C4200,114,4260,138,4290,150L4320,162L4320,180L4290,180C4260,180,4200,180,4140,180C4080,180,4020,180,3960,180C3900,180,3840,180,3780,180C3720,180,3660,180,3600,180C3540,180,3480,180,3420,180C3360,180,3300,180,3240,180C3180,180,3120,180,3060,180C3000,180,2940,180,2880,180C2820,180,2760,180,2700,180C2640,180,2580,180,2520,180C2460,180,2400,180,2340,180C2280,180,2220,180,2160,180C2100,180,2040,180,1980,180C1920,180,1860,180,1800,180C1740,180,1680,180,1620,180C1560,180,1500,180,1440,180C1380,180,1320,180,1260,180C1200,180,1140,180,1080,180C1020,180,960,180,900,180C840,180,780,180,720,180C660,180,600,180,540,180C480,180,420,180,360,180C300,180,240,180,180,180C120,180,60,180,30,180L0,180Z">
+            </path>
+        </svg>
+    </section>
+
+
+
+
+
+    <!-- testimonial section -->
+    <section class="testimonial wrapper">
+        <h2 class="testimonialCategory">Testimonials</h2>
+        <div class="testimonialScrollingWrapper">
+            <div class="testimonialContainer"></div>
+            <div class="testimonialScrollBtns">
+                <button class="pre-btn"><img src="../assets/images/arrow.png" alt="Previous"></button>
+                <button class="nxt-btn"><img src="../assets/images/arrow.png" alt="Next"></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <section class="footer">
+        <div class="footerWave">
+            <svg class="footerWaveSvg" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 220"
+                version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <path style="transform:translate(0, 0px); opacity:1" fill="#1d2e36"
+                    d="M0,0L26.7,14.7C53.3,29,107,59,160,91.7C213.3,125,267,161,320,179.7C373.3,198,427,198,480,168.7C533.3,139,587,81,640,58.7C693.3,37,747,51,800,69.7C853.3,88,907,110,960,124.7C1013.3,139,1067,147,1120,132C1173.3,117,1227,81,1280,66C1333.3,51,1387,59,1440,80.7C1493.3,103,1547,139,1600,143C1653.3,147,1707,117,1760,99C1813.3,81,1867,73,1920,91.7C1973.3,110,2027,154,2080,172.3C2133.3,191,2187,183,2240,179.7C2293.3,176,2347,176,2400,154C2453.3,132,2507,88,2560,84.3C2613.3,81,2667,117,2720,132C2773.3,147,2827,139,2880,113.7C2933.3,88,2987,44,3040,33C3093.3,22,3147,44,3200,47.7C3253.3,51,3307,37,3360,29.3C3413.3,22,3467,22,3520,18.3C3573.3,15,3627,7,3680,18.3C3733.3,29,3787,59,3813,73.3L3840,88L3840,220L3813.3,220C3786.7,220,3733,220,3680,220C3626.7,220,3573,220,3520,220C3466.7,220,3413,220,3360,220C3306.7,220,3253,220,3200,220C3146.7,220,3093,220,3040,220C2986.7,220,2933,220,2880,220C2826.7,220,2773,220,2720,220C2666.7,220,2613,220,2560,220C2506.7,220,2453,220,2400,220C2346.7,220,2293,220,2240,220C2186.7,220,2133,220,2080,220C2026.7,220,1973,220,1920,220C1866.7,220,1813,220,1760,220C1706.7,220,1653,220,1600,220C1546.7,220,1493,220,1440,220C1386.7,220,1333,220,1280,220C1226.7,220,1173,220,1120,220C1066.7,220,1013,220,960,220C906.7,220,853,220,800,220C746.7,220,693,220,640,220C586.7,220,533,220,480,220C426.7,220,373,220,320,220C266.7,220,213,220,160,220C106.7,220,53,220,27,220L0,220Z">
+                </path>
+            </svg>
+        </div>
+        <div class="footerContent">
+            <div class="mainFooterContent wrapper">
+                <div class="mainFooter">
+                    <a href="../index.html" class="footerLogo">CozyCare</a>
+                    <div class="socialIcons">
+                        <img src="../assets/images/footerIcons/facebook.png" alt="">
+                        <img src="../assets/images/footerIcons/instagram.png" alt="">
+                        <img src="../assets/images/footerIcons/linkedin.png" alt="">
+                        <img src="../assets/images/footerIcons/twitter.png" alt="">
+                        <img src="../assets/images/footerIcons/youtube.png" alt="">
+                    </div>
+                </div>
+                <div class="services">
+                    <h1 class="servicesTitle">Services</h1>
+                    <ul class="servicesList">
+                        <li>Ironing</li>
+                        <li>Dry Cleaning</li>
+                        <li>Stain Removal</li>
+                        <li>Wash and Fold</li>
+                        <li>Bedding Cleaning</li>
+                        <li>Shoe and Bag Cleaning</li>
+                        <li>Alterations and Repairs</li>
+                    </ul>
+                </div>
+                <div class="contacts">
+                    <h1 class="contactTitle">Contacts</h1>
+                    <div class="mobile">
+                        <img src="../assets/images/phone-call.png" alt="" class="mobileIcon">
+                        <a href="tel:+32 47 123 45 67" class="mobileNumber">+32 47 123 45 67</a>
+                    </div>
+                    <div class="mail">
+                        <img src="../assets/images/email.png" alt="" class="mailIcon">
+                        <div class="mailLink">info@cozycaregroup.com</div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright wrapper">
+                <div class="copyrightText">
+                    Copyright@2023 | CozyCare | <span>FAQ</span> | <span>Private Policy</span> | <span>Terms of
+                        Service</span>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

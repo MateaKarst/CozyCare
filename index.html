@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CozyCare</title>
+
+    <link rel="stylesheet" href="./assets/homestyle/home.css">
+    <link rel="stylesheet" href="./assets/reusableStyle/nav.css">
+    <link rel="stylesheet" href="./assets/reusableStyle/footer.css">
+
+    <script defer src="./assets/scripts/navHandler.js"></script>
+    <script defer src="./assets/scripts/loggingIn.js"></script>
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script defer src="./assets/scripts/loggingFormHandler.js" type="module"></script>
+    <script defer src="./assets/scripts/registerFormHandler.js" type="module"></script>
+</head>
+
+<body>
+    <!-- navigation -->
+    <section class="navigation wrapper">
+        <a href="./index.html" class="logo">CozyCare</a>
+        <div class="burgerMenu" id="burgerMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="navBar" id="navListWrapper">
+            <ul id="navListContainer">
+                <li class="navlist"><a href="./index.html">How it works</a></li>
+                <li class="navlist"><a href="./pages/services.html">Services</a></li>
+                <li class="navlist"><a href="./index.html">Prices</a></li>
+                <li class="navlist">
+                    <div class="dropDownContainer" id="logIn">
+                        <div class="profile" id="profileBtn">
+                            <div class="profileImgWrapper"> <a href="#"><img src="./assets/images/profile.png"
+                                        alt=""></a></div>
+                            <div class="profileImgWrapperPc"> <a href="#"><img src="./assets/images/profilepc.png"
+                                        alt=""></a></div>
+
+                        </div>
+                        <ul class="dropDown"></ul>
+
+                        <!-- login popup -->
+                        <div class="loginPopUp">
+                            <div class="loginCloseBtn">&times;</div>
+                            <form class="loginForm">
+                                <h2 class="title">Log In</h2>
+                                <div class="formElement">
+                                    <label for="email">Email</label>
+                                    <input type="email" required id="emailLoggedIn" placeholder="Email">
+                                </div>
+                                <div class="formElement">
+                                    <label for="password">Password</label>
+                                    <input type="password" required id="passwordLoggedIn" placeholder="Password">
+                                </div>
+                                <div class="formElement checkbx">
+                                    <label for="rememberMe">Remember me</label>
+                                    <input type="checkbox" id="rememberMeLogin">
+                                </div>
+                                <div class="formElement">
+                                    <button class="signInBtn" type="submit">Sign In</button>
+                                </div>
+                                <div class="otherOptions">
+                                    <div class="otherOptionsFormElement registerFormElement">
+                                        <a href="#">Register</a>
+                                    </div>
+                                    <div class="otherOptionsFormElement">
+                                        <a href="#">Forgot Password?</a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                        <!-- register popup -->
+                        <div class="registerPopUp">
+                            <div class="registerCloseBtn">&times;</div>
+                            <form class="registerForm">
+                                <h2 class="title">Register</h2>
+                                <div class="formElement">
+                                    <label for="name">Name</label>
+                                    <input type="text" required id="nameRegister" placeholder="Name">
+                                </div>
+                                <div class="formElement">
+                                    <label for="email">Email</label>
+                                    <input type="email" required id="emailRegister" placeholder="Email">
+                                </div>
+                                <div class="formElement">
+                                    <label for="password">Password</label>
+                                    <input type="password" required id="passwordRegister" placeholder="Password">
+                                </div>
+                                <div class="formElement checkbx">
+                                    <label for="rememberMe">Remember me</label>
+                                    <input type="checkbox" id="rememberMeRegister">
+                                </div>
+                                <div class="formElement">
+                                    <button class="registerBtn">Register</button>
+                                </div>
+                                <div class="otherOptions">
+                                    <div class="otherOptionsFormElement signInFormElement">
+                                        <a href="#">Sign In</a>
+                                    </div>
+                                    <div class="otherOptionsFormElement">
+                                        <a href="#">Forgot Password?</a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </section>
+
+
+    <!-- hero section -->
+    <section class="heroSection wrapper">
+        <h1 class="heroTitle">We wash<br /><span class="your">YOUR</span><br />stress away !</h1>
+        <img class="homepageBannerImg" src="./assets/images/homepageBanner.webp" alt="">
+        </div>
+    </section>
+
+    <!-- about section -->
+    <section class="about">
+        <div class="aboutWave">
+            <svg class="waveAboutSvg" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 310"
+                version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <path class="aboutWavePathSecond" style="transform:translate(0, 0px); opacity:1" fill="#5ae3a7"
+                    d="M0,279L34.3,273.8C68.6,269,137,258,206,232.5C274.3,207,343,165,411,134.3C480,103,549,83,617,98.2C685.7,114,754,165,823,160.2C891.4,155,960,93,1029,67.2C1097.1,41,1166,52,1234,87.8C1302.9,124,1371,186,1440,217C1508.6,248,1577,248,1646,222.2C1714.3,196,1783,145,1851,129.2C1920,114,1989,134,2057,149.8C2125.7,165,2194,176,2263,170.5C2331.4,165,2400,145,2469,134.3C2537.1,124,2606,124,2674,124C2742.9,124,2811,124,2880,149.8C2948.6,176,3017,227,3086,217C3154.3,207,3223,134,3291,118.8C3360,103,3429,145,3497,170.5C3565.7,196,3634,207,3703,211.8C3771.4,217,3840,217,3909,196.3C3977.1,176,4046,134,4114,98.2C4182.9,62,4251,31,4320,36.2C4388.6,41,4457,83,4526,103.3C4594.3,124,4663,124,4731,144.7C4800,165,4869,207,4903,227.3L4937.1,248L4937.1,310L4902.9,310C4868.6,310,4800,310,4731,310C4662.9,310,4594,310,4526,310C4457.1,310,4389,310,4320,310C4251.4,310,4183,310,4114,310C4045.7,310,3977,310,3909,310C3840,310,3771,310,3703,310C3634.3,310,3566,310,3497,310C3428.6,310,3360,310,3291,310C3222.9,310,3154,310,3086,310C3017.1,310,2949,310,2880,310C2811.4,310,2743,310,2674,310C2605.7,310,2537,310,2469,310C2400,310,2331,310,2263,310C2194.3,310,2126,310,2057,310C1988.6,310,1920,310,1851,310C1782.9,310,1714,310,1646,310C1577.1,310,1509,310,1440,310C1371.4,310,1303,310,1234,310C1165.7,310,1097,310,1029,310C960,310,891,310,823,310C754.3,310,686,310,617,310C548.6,310,480,310,411,310C342.9,310,274,310,206,310C137.1,310,69,310,34,310L0,310Z">
+                </path>
+                <path class="aboutWavePathFirst" style="transform:translate(0, 50px); opacity:0.9" fill="#d6f7e7"
+                    d="M0,155L34.3,134.3C68.6,114,137,72,206,51.7C274.3,31,343,31,411,41.3C480,52,549,72,617,108.5C685.7,145,754,196,823,227.3C891.4,258,960,269,1029,232.5C1097.1,196,1166,114,1234,98.2C1302.9,83,1371,134,1440,149.8C1508.6,165,1577,145,1646,160.2C1714.3,176,1783,227,1851,217C1920,207,1989,134,2057,134.3C2125.7,134,2194,207,2263,227.3C2331.4,248,2400,217,2469,186C2537.1,155,2606,124,2674,118.8C2742.9,114,2811,134,2880,155C2948.6,176,3017,196,3086,206.7C3154.3,217,3223,217,3291,180.8C3360,145,3429,72,3497,82.7C3565.7,93,3634,186,3703,201.5C3771.4,217,3840,155,3909,108.5C3977.1,62,4046,31,4114,51.7C4182.9,72,4251,145,4320,175.7C4388.6,207,4457,196,4526,175.7C4594.3,155,4663,124,4731,129.2C4800,134,4869,176,4903,196.3L4937.1,217L4937.1,310L4902.9,310C4868.6,310,4800,310,4731,310C4662.9,310,4594,310,4526,310C4457.1,310,4389,310,4320,310C4251.4,310,4183,310,4114,310C4045.7,310,3977,310,3909,310C3840,310,3771,310,3703,310C3634.3,310,3566,310,3497,310C3428.6,310,3360,310,3291,310C3222.9,310,3154,310,3086,310C3017.1,310,2949,310,2880,310C2811.4,310,2743,310,2674,310C2605.7,310,2537,310,2469,310C2400,310,2331,310,2263,310C2194.3,310,2126,310,2057,310C1988.6,310,1920,310,1851,310C1782.9,310,1714,310,1646,310C1577.1,310,1509,310,1440,310C1371.4,310,1303,310,1234,310C1165.7,310,1097,310,1029,310C960,310,891,310,823,310C754.3,310,686,310,617,310C548.6,310,480,310,411,310C342.9,310,274,310,206,310C137.1,310,69,310,34,310L0,310Z">
+                </path>
+            </svg>
+        </div>
+        <div class="aboutTxt">
+            <h1 class="abtTitle">About Us</h1>
+            <div class="abtPara">
+                <div class="abtParaParts intro"> Welcome to CozyCare, your one-stop laundry app solution. Our goal is to
+                    provide you with the most
+                    convenient, dependable, and high-quality cleaning services possible.
+                </div>
+                <div class="abtParaParts convenience">
+                    We understand that life can be hectic, and the last thing you want to do is laundry. That's where
+                    CozyCare comes in. Our experienced team is committed to taking care of your cleaning requirements so
+                    you
+                    can concentrate on what is most important to you.
+                </div>
+                <div class="abtParaParts callToAction">
+                    <span>Join us!</span> and enjoy the best cleaning services. <br /> We look forward to serving
+                    you!
+                </div>
+            </div>
+        </div>
+        <div class="aboutWaveBottom">
+            <svg class="waveAboutSvg" style="transform:rotate(180deg); transition: 0.3s" viewBox="0 0 1440 250"
+                version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <path style="transform:translate(0, 0px); opacity:1" fill="#5ae3a7"
+                    d="M0,150L26.7,162.5C53.3,175,107,200,160,191.7C213.3,183,267,142,320,120.8C373.3,100,427,100,480,120.8C533.3,142,587,183,640,195.8C693.3,208,747,192,800,183.3C853.3,175,907,175,960,154.2C1013.3,133,1067,92,1120,75C1173.3,58,1227,67,1280,62.5C1333.3,58,1387,42,1440,66.7C1493.3,92,1547,158,1600,175C1653.3,192,1707,158,1760,158.3C1813.3,158,1867,192,1920,187.5C1973.3,183,2027,142,2080,120.8C2133.3,100,2187,100,2240,95.8C2293.3,92,2347,83,2400,91.7C2453.3,100,2507,125,2560,145.8C2613.3,167,2667,183,2720,158.3C2773.3,133,2827,67,2880,70.8C2933.3,75,2987,150,3040,150C3093.3,150,3147,75,3200,58.3C3253.3,42,3307,83,3360,87.5C3413.3,92,3467,58,3520,50C3573.3,42,3627,58,3680,91.7C3733.3,125,3787,175,3813,200L3840,225L3840,250L3813.3,250C3786.7,250,3733,250,3680,250C3626.7,250,3573,250,3520,250C3466.7,250,3413,250,3360,250C3306.7,250,3253,250,3200,250C3146.7,250,3093,250,3040,250C2986.7,250,2933,250,2880,250C2826.7,250,2773,250,2720,250C2666.7,250,2613,250,2560,250C2506.7,250,2453,250,2400,250C2346.7,250,2293,250,2240,250C2186.7,250,2133,250,2080,250C2026.7,250,1973,250,1920,250C1866.7,250,1813,250,1760,250C1706.7,250,1653,250,1600,250C1546.7,250,1493,250,1440,250C1386.7,250,1333,250,1280,250C1226.7,250,1173,250,1120,250C1066.7,250,1013,250,960,250C906.7,250,853,250,800,250C746.7,250,693,250,640,250C586.7,250,533,250,480,250C426.7,250,373,250,320,250C266.7,250,213,250,160,250C106.7,250,53,250,27,250L0,250Z">
+                </path>
+                <path style="transform:translate(0, 50px); opacity:0.9" fill="#d6f7e7"
+                    d="M0,75L26.7,66.7C53.3,58,107,42,160,41.7C213.3,42,267,58,320,79.2C373.3,100,427,125,480,120.8C533.3,117,587,83,640,83.3C693.3,83,747,117,800,116.7C853.3,117,907,83,960,70.8C1013.3,58,1067,67,1120,62.5C1173.3,58,1227,42,1280,33.3C1333.3,25,1387,25,1440,54.2C1493.3,83,1547,142,1600,162.5C1653.3,183,1707,167,1760,145.8C1813.3,125,1867,100,1920,79.2C1973.3,58,2027,42,2080,50C2133.3,58,2187,92,2240,104.2C2293.3,117,2347,108,2400,125C2453.3,142,2507,183,2560,170.8C2613.3,158,2667,92,2720,70.8C2773.3,50,2827,75,2880,91.7C2933.3,108,2987,117,3040,120.8C3093.3,125,3147,125,3200,137.5C3253.3,150,3307,175,3360,162.5C3413.3,150,3467,100,3520,79.2C3573.3,58,3627,67,3680,66.7C3733.3,67,3787,58,3813,54.2L3840,50L3840,250L3813.3,250C3786.7,250,3733,250,3680,250C3626.7,250,3573,250,3520,250C3466.7,250,3413,250,3360,250C3306.7,250,3253,250,3200,250C3146.7,250,3093,250,3040,250C2986.7,250,2933,250,2880,250C2826.7,250,2773,250,2720,250C2666.7,250,2613,250,2560,250C2506.7,250,2453,250,2400,250C2346.7,250,2293,250,2240,250C2186.7,250,2133,250,2080,250C2026.7,250,1973,250,1920,250C1866.7,250,1813,250,1760,250C1706.7,250,1653,250,1600,250C1546.7,250,1493,250,1440,250C1386.7,250,1333,250,1280,250C1226.7,250,1173,250,1120,250C1066.7,250,1013,250,960,250C906.7,250,853,250,800,250C746.7,250,693,250,640,250C586.7,250,533,250,480,250C426.7,250,373,250,320,250C266.7,250,213,250,160,250C106.7,250,53,250,27,250L0,250Z">
+                </path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <section class="footer">
+        <div class="footerWave">
+            <svg class="footerWaveSvg" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 220"
+                version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <path style="transform:translate(0, 0px); opacity:1" fill="#1d2e36"
+                    d="M0,0L26.7,14.7C53.3,29,107,59,160,91.7C213.3,125,267,161,320,179.7C373.3,198,427,198,480,168.7C533.3,139,587,81,640,58.7C693.3,37,747,51,800,69.7C853.3,88,907,110,960,124.7C1013.3,139,1067,147,1120,132C1173.3,117,1227,81,1280,66C1333.3,51,1387,59,1440,80.7C1493.3,103,1547,139,1600,143C1653.3,147,1707,117,1760,99C1813.3,81,1867,73,1920,91.7C1973.3,110,2027,154,2080,172.3C2133.3,191,2187,183,2240,179.7C2293.3,176,2347,176,2400,154C2453.3,132,2507,88,2560,84.3C2613.3,81,2667,117,2720,132C2773.3,147,2827,139,2880,113.7C2933.3,88,2987,44,3040,33C3093.3,22,3147,44,3200,47.7C3253.3,51,3307,37,3360,29.3C3413.3,22,3467,22,3520,18.3C3573.3,15,3627,7,3680,18.3C3733.3,29,3787,59,3813,73.3L3840,88L3840,220L3813.3,220C3786.7,220,3733,220,3680,220C3626.7,220,3573,220,3520,220C3466.7,220,3413,220,3360,220C3306.7,220,3253,220,3200,220C3146.7,220,3093,220,3040,220C2986.7,220,2933,220,2880,220C2826.7,220,2773,220,2720,220C2666.7,220,2613,220,2560,220C2506.7,220,2453,220,2400,220C2346.7,220,2293,220,2240,220C2186.7,220,2133,220,2080,220C2026.7,220,1973,220,1920,220C1866.7,220,1813,220,1760,220C1706.7,220,1653,220,1600,220C1546.7,220,1493,220,1440,220C1386.7,220,1333,220,1280,220C1226.7,220,1173,220,1120,220C1066.7,220,1013,220,960,220C906.7,220,853,220,800,220C746.7,220,693,220,640,220C586.7,220,533,220,480,220C426.7,220,373,220,320,220C266.7,220,213,220,160,220C106.7,220,53,220,27,220L0,220Z">
+                </path>
+            </svg>
+        </div>
+        <div class="footerContent">
+            <div class="mainFooterContent wrapper">
+                <div class="mainFooter">
+                    <a href="./index.html" class="footerLogo">CozyCare</a>
+                    <div class="socialIcons">
+                        <img src="./assets/images/footerIcons/facebook.png" alt="">
+                        <img src="./assets/images/footerIcons/instagram.png" alt="">
+                        <img src="./assets/images/footerIcons/linkedin.png" alt="">
+                        <img src="./assets/images/footerIcons/twitter.png" alt="">
+                        <img src="./assets/images/footerIcons/youtube.png" alt="">
+                    </div>
+                </div>
+                <div class="services">
+                    <h1 class="servicesTitle">Services</h1>
+                    <ul class="servicesList">
+                        <li>Ironing</li>
+                        <li>Dry Cleaning</li>
+                        <li>Stain Removal</li>
+                        <li>Wash and Fold</li>
+                        <li>Bedding Cleaning</li>
+                        <li>Shoe and Bag Cleaning</li>
+                        <li>Alterations and Repairs</li>
+                    </ul>
+                </div>
+                <div class="contacts">
+                    <h1 class="contactTitle">Contacts</h1>
+                    <div class="mobile">
+                        <img src="./assets/images/phone-call.png" alt="" class="mobileIcon">
+                        <a href="tel:+32 47 123 45 67" class="mobileNumber">+32 47 123 45 67</a>
+                    </div>
+                    <div class="mail">
+                        <img src="./assets/images/email.png" alt="" class="mailIcon">
+                        <div class="mailLink">info@cozycaregroup.com</div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="copyrightText">
+                    Copyright@2023 | CozyCare | <span>FAQ</span> | <span>Private Policy</span> | <span>Terms of
+                        Service</span>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

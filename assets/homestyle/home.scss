@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Quicksand:wght@700&family=Roboto&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    // font-family: 'Montserrat', sans-serif;
+    // font-family: 'Quicksand', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+.heroSection {
+    color: #1d2e36;
+    margin: 80px 0 100px 0;
+
+    .heroTitle {
+        margin: 10px;
+        padding-bottom: 30px;
+        text-align: center;
+        font-size: 30px;
+        color: #1d2e36;
+        font-family: "Montserrat", sans-serif;
+
+        .your {
+            font-size: 30px;
+            color: #5ae3a7;
+            text-decoration: underline;
+            font-family: "Montserrat", sans-serif;
+        }
+    }
+
+    .homepageBannerImg {
+        width: 100%;
+    }
+}
+
+.about {
+    color: #1d2e36;
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 150px;
+
+    .aboutWave {
+
+        .waveAboutSvg {
+
+            display: block;
+        }
+    }
+
+    .aboutTxt {
+        background-color: #caf4e0;
+
+        .abtTitle {
+            padding: 50px 10px 10px 10px;
+            font-size: 30px;
+        }
+
+        .abtPara {
+            margin: 0px 10px;
+            padding-bottom: 20px;
+            font-size: 15px;
+
+            .abtParaParts {
+                padding: 20px;
+
+                span {
+                    color: #1d2e36;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .heroSection {
+        margin: 40px 0 80px 0;
+
+        .homepageBannerImg {
+            width: 80%;
+            margin: 0 10%;
+        }
+    }
+
+    .about {
+        margin-bottom: 100px;
+
+        .aboutTxt {
+            padding: 0 60px;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .heroSection {
+        margin: 100px 0 150px 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        .homepageBannerImg {
+            width: 50%;
+
+            .heroTitle {
+                margin: 0 60px 0 0;
+                padding-bottom: 0px;
+                font-size: 40px;
+            }
+        }
+
+        .about {
+            .aboutTxt {
+                padding: 0 100px;
+
+                .abtTitle {
+                    padding: 50px 10px 20px 10px;
+                    font-size: 30px;
+                }
+
+                .abtPara {
+                    margin: 10px 20px 0 20px;
+                    padding-bottom: 10px;
+                    font-size: 18px;
+                }
+            }
+        }
+
+    }
+}

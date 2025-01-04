@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Quicksand:wght@700&family=Roboto&display=swap");
+.footer {
+  margin-top: 50px;
+}
+.footer .footerWave .footerWaveSvg {
+  display: block;
+}
+.footer .footerContent {
+  background-color: #1d2e36;
+  color: #fff;
+  padding: 20px;
+}
+.footer .footerContent .mainFooterContent {
+  font-family: "Montserrat", sans-serif;
+  font-size: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.footer .footerContent .mainFooterContent .mainFooter {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.footer .footerContent .mainFooterContent .mainFooter .footerLogo {
+  font-family: "Quicksand", sans-serif;
+  text-decoration: none;
+  font-size: 30px;
+  color: #fff;
+}
+.footer .footerContent .mainFooterContent .mainFooter .socialIcons {
+  padding: 20px 0;
+}
+.footer .footerContent .mainFooterContent .mainFooter .socialIcons img {
+  height: 20px;
+  width: 20px;
+}
+.footer .footerContent .mainFooterContent .services {
+  text-align: center;
+  padding-bottom: 30px;
+}
+.footer .footerContent .mainFooterContent .services .servicesTitle {
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+.footer .footerContent .mainFooterContent .services .servicesList {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px 20px;
+}
+.footer .footerContent .contacts {
+  text-align: center;
+}
+.footer .footerContent .contacts .contactTitle {
+  font-size: 20px;
+  padding: 10px;
+}
+.footer .footerContent .contacts .mobile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  padding: 2px;
+}
+.footer .footerContent .contacts .mobile .mobileIcon {
+  height: 20px;
+  width: 20px;
+}
+.footer .footerContent .contacts .mobile .mobileNumber {
+  text-decoration: none;
+  color: white;
+}
+.footer .footerContent .contacts .mail {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  padding: 2px;
+}
+.footer .footerContent .contacts .mail .mailIcon {
+  height: 20px;
+  width: 20px;
+}
+.footer .footerContent .contacts .mail .mailLink {
+  color: #fff;
+}
+.footer .footerContent .copyright {
+  padding: 60px 0 40px 0;
+}
+.footer .footerContent .copyright .copyrightText {
+  text-align: center;
+  font-size: 9px;
+}
+.footer .footerContent .copyright .copyrightText span {
+  font-weight: 600;
+}
+
+@media screen and (min-width: 768px) {
+  .footer .footerContent {
+    padding: 40px 20px 20px 20px;
+  }
+  .footer .footerContent .mainFooterContent {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 40px;
+  }
+  .footer .footerContent .mainFooterContent .mainFooter {
+    padding: 0px;
+  }
+  .footer .footerContent .mainFooterContent .mainFooter .footerLogo {
+    font-size: 30px;
+  }
+  .footer .footerContent .mainFooterContent .mainFooter .socialIcons img {
+    height: 25px;
+    width: 25px;
+  }
+  .footer .footerContent .mainFooterContent .services {
+    padding-bottom: 0px;
+  }
+  .footer .footerContent .mainFooterContent .services .servicesTitle {
+    font-size: 20px;
+  }
+  .footer .footerContent .mainFooterContent .services .servicesList {
+    font-size: 14px;
+  }
+  .footer .footerContent .mainFooterContent .contacts .contactTitle {
+    font-size: 20px;
+    padding: 0 0 10px 0;
+  }
+  .footer .footerContent .copyright .copyrightText {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .footer .footerContent .mainFooterContent {
+    gap: 150px;
+  }
+  .footer .footerContent .copyright .copyrightText {
+    padding-top: 30px;
+  }
+}/*# sourceMappingURL=footer.css.map */
